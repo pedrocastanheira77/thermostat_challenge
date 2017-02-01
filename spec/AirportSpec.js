@@ -5,14 +5,16 @@ describe("Airport", function() {
 
   beforeEach(function() {
     airport = new Airport()
-    plane = new Plane()
+    plane = {};
+    plane.landed = jasmine.createSpy("landed spy");
   });
 
   describe("landing", function(){
     it("lands a plane", function(){
       airport.land(plane);
-      expect(airport.planes.length).toBe(1);
-      expect(airport.planes.length).toContain(plane);
+      expect(plane.landed).toHaveBeenCalled();
+      expect(airport.showPlanes().length).toBe(1);
+      expect(airport.showPlanes()).toContain(plane);
     });
   });
 });
