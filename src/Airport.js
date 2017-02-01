@@ -4,7 +4,7 @@ function Airport() {
 
 Airport.prototype.land = function(plane) {
   this._addToPlanes(plane);
-  plane.landed();
+  plane.changeStatus("landed");
 };
 
 Airport.prototype.showPlanes = function() {
