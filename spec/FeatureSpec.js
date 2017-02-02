@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Thermostat', function(){
+describe('Feature Tests', function(){
 
   var thermostat;
 
@@ -8,13 +8,8 @@ describe('Thermostat', function(){
     thermostat = new Thermostat;
   });
 
-  describe('::new', function(){
-    it('Thermostat starts at 20 degrees', function(){
-      expect(thermostat._value).toBe(20);
-    });
-  });
-
-  describe('#getSetPoint', function(){
+// Thermostat starts at 20 degrees
+  describe('Thermostat temperature setting', function(){
     it('Thermostat starts at 20 degrees', function(){
       expect(thermostat.getSetPoint()).toBe(20);
     });

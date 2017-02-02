@@ -1,7 +1,9 @@
-function Thermostat(){
-  this._value = 20
-}
+'use strict';
 
-Thermostat.prototype.getSetting = function () {
-  return this._value
+function Thermostat(){
+  this._value = 20;
+};
+
+Thermostat.prototype.getSetPoint = function () {
+  return this._value;
 };
