@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thermostat</title>
+
+    <style>
+      p.test {
+        font-weight: bold;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <script src="jquery-3.1.1.min.js"></script>
+    <h1>Thermostat</h1>
+    <form>
+      <input id="increase_btn" type="submit" name="increase" value="+">
+      <input id="decrease_btn" type="submit" name="decrease" value="-">
+    </form>
+    <div>
+      <p>20</p>
+    </div>
+    <form>
+      <label>
+        Power Mode:
+        <button id="power_mode_btn" type="submit">ON</button>
+      </label>
+    </form>
+    <div>
+      <p>Energy Usage: low-usage</p>
+    </div>
+  </body>
+
+  <script src="js/events.js"></script>
+  <script src="js/thermostat.js"></script>`
+
+</html>
